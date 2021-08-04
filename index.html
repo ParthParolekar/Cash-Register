@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cash Register</title>
+  </head>
+  <body>
+    <nav class="title">
+      <h1 class="title-text">Cash Register Manager</h1>
+    </nav>
+    <main>
+      <div class="info">
+        <p>Know the minimum number of notes to be returned to your customer</p>
+      </div>
+      <div class="user-input">
+        <label for="bill-amt">Bill Amount</label>
+        <input type="number" class="bill-amt" />
+      </div>
+      <div class="user-input">
+        <label for="cash-given">Cash Given</label>
+        <input type="number" class="cash-given" />
+      </div>
+      <div class="btn-div">
+        <button class="btn calculate-btn">Calculate</button>
+        <button class="btn clear-btn">Clear</button>
+      </div>
+      <div class="msg"></div>
+      <table class="notes-table">
+        <tr>
+          <th>No of Notes</th>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+        </tr>
+        <tr>
+          <th>Notes</th>
+          <td class="note">2000</td>
+          <td class="note">500</td>
+          <td class="note">100</td>
+          <td class="note">20</td>
+          <td class="note">10</td>
+          <td class="note">5</td>
+          <td class="note">1</td>
+        </tr>
+      </table>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
