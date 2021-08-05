@@ -15,12 +15,11 @@ function clear() {
 }
 
 function validate() {
-  amountToBeReturned = cashGiven.value - billAmt.value;
-
   if (billAmt.value <= 0) {
     showMessage("Please enter a valid bill amount");
   } else {
-    if (cashGiven.value >= billAmt.value) {
+    amountToBeReturned = cashGiven.value - billAmt.value;
+    if (amountToBeReturned >= 0) {
       calculateNotes(amountToBeReturned);
     } else {
       showMessage("Cash given should be more than or equal to the bill amount");
