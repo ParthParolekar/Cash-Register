@@ -76,10 +76,16 @@ th {
   cursor: pointer;
   font-family: inherit;
   font-weight: 400;
-  transition: 0.5s all ease;
+  transition: 0.3s all ease;
 }
 
 .btn:hover {
   background: var(--primary);
-  transition: 0.5s all ease;
+  transition: 0.3s all ease;
+}
+
+.msg {
+  background: var(--primary);
+  font-weight: 500;
+  padding: 0.2rem;
 }
